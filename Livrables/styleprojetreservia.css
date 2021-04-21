@@ -1,0 +1,222 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'Raleway-Bold';
+    src: url('static/Raleway-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Raleway-Regular';
+    src: url('static/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Eléments principaux de la page */
+
+body
+{
+    background: white;
+    font-family: 'Raleway-Bold', Arial, sans-serif;
+    color: black;
+}
+
+#bloc_page
+{
+    width: 1440px;
+    margin-left: 50px;
+    margin margin-right: 50px;
+}
+
+p
+{
+    font-family: Raleway-Bold, serif;
+    font-size: 20px;
+}
+
+h1
+{
+    font-family: Raleway-Bold, serif;
+    font-size: 20px;
+}
+
+h2 
+{
+    font-family: Raleway-Bold, serif;
+    font-size: 15px;
+}
+
+h3
+{
+    font-family: Raleway-Bold, serif;
+    font-size: 12px;
+}
+
+.star 
+{
+    height: 10px;
+    width: auto;
+}
+
+/* Header */
+
+header
+{
+    display: flex;
+}
+
+#titre_principal
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#logo
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#choix_lieu
+{
+    display: inline-flex;
+    vertical-align: baseline;
+}
+
+
+#choix_lieu img
+{
+    height: 25px;
+    border: 2px solid black;
+}
+
+#choix_lieu label
+{
+    background-color: #0065FC;
+    color: black;
+    border: 2px solid black;
+}
+
+#icon_info img
+{
+    height: 15px;
+    color: 
+    border: 2px #22F2F2;
+    border-radius: 50%;
+}
+header h1
+{
+    font-family: 'Raleway-Bold', serif;
+    font-weight: normal;
+    margin: 0 0 0 0px;
+}
+
+/* Navigation */
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-right: 15px;
+}
+
+nav a
+{
+    font-family: Raleway-Regular, serif;
+    font-size: 12px;
+    color: black;
+    padding: 20px 10px 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+nav a:active
+{
+    font-family: 'Raleway-Bold', serif;
+    color: #0065FC;
+}
+
+
+/* Corps */
+
+section
+{
+    display: flex;
+    margin-bottom: 62px;
+}
+
+section img
+{
+    height: auto;
+    width: 245px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+}
+
+
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside
+{
+   display: flex;
+   flex-direction: column;
+    flex: 1.2;
+    position: relative;
+    background-color: #F2F2F2;
+    box-shadow: 0px 2px 5px #F2F2F2;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+aside img
+{
+   height: 445px;
+   width: 300px;
+}
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    padding-top: 60px;
+}
+
+footer p, footer ul
+{
+    font-size: 0.8em;
+}
+
+footer h1
+{
+    font-size: 1.1em;
+}
+
+
