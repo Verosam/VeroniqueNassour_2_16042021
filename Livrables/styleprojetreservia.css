@@ -75,6 +75,21 @@ h6
     width: auto;
 }
 
+a
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+a:hover
+{
+    font-weight: bolder;
+    color: #0065FC
+}
+
 /* Header */
 
 header
@@ -286,12 +301,8 @@ input#animaux[type="checkbox"] + label::before
     border: 2px solid #F2F2F2;
     border-radius: 50%;
     padding: 2px;
-}
-
-#image_info img
-{
     height: 15px;
-    width: 15px;    
+    width: 15px;  
 }
 
 #icon_info h5
@@ -301,44 +312,79 @@ input#animaux[type="checkbox"] + label::before
 }
 
 
-
-
 /* Corps */
 
-section
+section1
 {
     display: flex;
     margin-bottom: 62px;
 }
 
-section img
+#populaires
 {
-    height: 102px;
-    width: 245px;
-    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
 }
 
-#hebergements
+.popu
 {
-    width: 60%;
+    width: 90%;
+    background-color: white;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 0px 2px 5px #F2F2F2;
+}
+
+.imgpopu
+{
+    width: 50%;
+    padding-bottom: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.imgpopu img
+{
+    position: absolute;
+    height: 100%;
 }
 
 aside
 {
+   float: right;
    width: 30%;
    display: flex;
    flex-direction: column;
+   justify-content: center;
    background-color: #F2F2F2;
-   box-shadow: 0px 2px 5px #F2F2F2;
    border-radius: 8px;
    padding: 10px;
+   position: ri;
 }
 
-aside img
+
+
+article
 {
-   height: 135px;
-   width: 120px;
-   object-fit: cover;
+    width: 60%;
+    background-color: #F2F2F2;
+    border-radius: 8px;
+}
+
+article img
+{
+    max-width: 27.6%;
+    max-height: 17.7%;
+    object-fit: cover;
+}
+
+.heberg
+{
+    width: 28.4%;
+    background-color: white;
+    border-radius: 8px;
+    margin: 5px;
+    box-shadow: 0px 2px 5px #F2F2F2;
 }
 
 /* Footer */
