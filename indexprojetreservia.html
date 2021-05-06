@@ -16,7 +16,7 @@
                             <li><a href="#hebergements"><h5>Hébergements</h5></a></li>
                             <li><a href="#activites"><h5>Activités</h5></a></li>
                             <li><a href="#"><h5>S'inscrire</h5></a></li>
-                            </ul>
+                        </ul>
                     </nav>  
                 </div>
 
@@ -29,11 +29,7 @@
                     <img src="images/logos/map-marker-alt-solid.svg" class="align1" alt="Icone Map marker" /> 
                     <form method="post" action="lieu.php">
                         <div class="align1">
-                            <select id="lieu">
-                                <option value="marseille">Marseille, France</option>
-                                <option value="nice">Nice, France</option>
-                                <option value="genes">Gênes, Italie</option>
-                            </select>
+                            <input type="text" id="lieu" value="Marseille, France">
                             <label for="lieu">Rechercher</label>
                         </div>
                     </form>
@@ -70,12 +66,12 @@
                     <img src="chart-line-solid.svg" alt="Icone chart line" />
                 </div>
 
-                <div id="soleil">
+                <div class="popu">
                     <a href="indexsoleil.html">
                     <div>
-                        <img src="images/hebergements/3_medium/soleil.jpg" alt="Hôtel Le Soleil du matin" />
+                        <img src="images/hebergements/4_small/soleil.jpg" alt="Hôtel Le Soleil du matin" />
                     </div>
-                    <div id="textsoleil">
+                    <div class="textpopu">
                         <h4>Hôtel Le soleil du matin</h4>
                         <h6>Nuit à partir de 128€</h6>
                         <div>
@@ -88,12 +84,12 @@
                     </div></a>    
                 </div>
 
-                <div id="eau">
+                <div class="popu">
                     <a href="#">
                     <div>
-                        <img src="images/hebergements/3_medium/eau.jpg" alt="Au coeur de l'eau" />
+                        <img src="images/hebergements/4_small/eau.jpg" alt="Au coeur de l'eau" />
                     </div>
-                    <div id="texteau">
+                    <div class="textpopu">
                         <h4>Au coeur de l'eau</h4>
                         <h4>Chambres d'hôtes</h4>
                         <h6>Nuit à partir de 72€</h6>
@@ -107,12 +103,12 @@
                     </div></a>
                 </div>
                 
-                <div id="bleu">
+                <div class="popu">
                     <a href="#">
                     <div>
-                        <img src="images/hebergements/3_medium/bleu.jpg" alt="Hôtel Tout bleu et Blanc" />
+                        <img src="images/hebergements/4_small/bleu.jpg" alt="Hôtel Tout bleu et Blanc" />
                     </div>
-                    <div id="textbleu">
+                    <div class="textpopu">
                         <h4>Hôtel Tout bleu et Blanc</h4>
                         <h6>Nuit à partir de 76€</h6>
                         <div>
@@ -124,6 +120,7 @@
                         </div> 
                     </div></a>
                 </div>
+
             </aside>
 
             <article>
@@ -132,7 +129,7 @@
 
                         <a href="#">
                         <div id="cannebiere" class="heberg">
-                            <img src="images/hebergements/3_medium/cannebiere.jpg" alt="Auberge Cannebière" />
+                            <img src="images/hebergements/4_small/cannebiere.jpg" alt="Auberge Cannebière" />
                             <h4>Auberge la Cannebière</h4>
                             <h6>Nuit à partir de 25€</h6>
                             <div class="stars">
@@ -147,7 +144,7 @@
 
                         <a href="#">
                         <div id="port" class="heberg">
-                            <img src="images/hebergements/3_medium/port.jpg" alt="Hôtel du port" />
+                            <img src="images/hebergements/4_small/port.jpg" alt="Hôtel du port" />
                             <h4>Hôtel du port</h4>
                             <h6>Nuit à partir de 52€</h6>
                             <div class="stars">
@@ -162,7 +159,7 @@
 
                         <a href="#">
                         <div id="mouettes" class="heberg">
-                            <img src="images/hebergements/3_medium/mouettes.jpg" alt="Hôtel Les mouettes" />
+                            <img src="images/hebergements/4_small/mouettes.jpg" alt="Hôtel Les mouettes" />
                             <h4>Hôtel Les mouettes</h4>
                             <h6>Nuit à partir de 76€</h6>
                             <div class="stars">
@@ -177,7 +174,7 @@
 
                         <a href="#">
                         <div id="mer" class="heberg">
-                            <img src="images/hebergements/3_medium/mer.jpg" alt="Hôtel de la mer" />
+                            <img src="images/hebergements/4_small/mer.jpg" alt="Hôtel de la mer" />
                             <h4>Hôtel de la mer</h4>
                             <h6>Nuit à partir de 46€</h6>
                             <div class="stars">
@@ -192,7 +189,7 @@
 
                         <a href="#">
                         <div id="panier" class="heberg">
-                            <img src="images/hebergements/3_medium/panier.jpg" alt="Auberge Le Panier" />
+                            <img src="images/hebergements/4_small/panier.jpg" alt="Auberge Le Panier" />
                             <h4>Auberge Le Panier</h4>
                             <h6>Nuit à partir de 23€</h6>
                             <div class="stars">
@@ -207,7 +204,7 @@
 
                         <a href="#">
                         <div id="amina" class="heberg">
-                            <img src="images/hebergements/3_medium/amina.jpg" alt="Hôtel chez Amina" />
+                            <img src="images/hebergements/4_small/amina.jpg" alt="Hôtel chez Amina" />
                             <h4>Hôtel chez Amina</h4>
                             <h6>Nuit à partir de 96€</h6>
                             <div class="stars">

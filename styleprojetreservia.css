@@ -43,12 +43,14 @@ h2
 {
     font-family: Raleway-Bold, Arial, serif;
     font-size: 130%;
+    margin: 25px 0 15px 0;
 }
 
 h3
 {
     font-family: Raleway-Bold, Arial, serif;
     font-size: 100%;
+    margin: 40px 0 40px 15px;
 }
 
 h4
@@ -107,6 +109,7 @@ header
 
 #logo
 {
+    width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -128,6 +131,7 @@ nav li
 
 nav li a
 {
+    display: block;
     color: black;
     padding: 20px 10px 0 10px;
     border-top: 2px solid transparent;
@@ -158,11 +162,6 @@ nav a:visited
 #choix_lieu .align1
 {
     vertical-align: middle;
-}
-
-.align1 select
-{
-    appearance: none;
 }
 
 #choix_lieu img
@@ -199,9 +198,9 @@ nav a:visited
     display: flex;
     align-items: center;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 35px;
     font-family: Raleway-Bold, Arial, Helvetica, sans-serif;
-    font-size: 110%;
+    font-size: 115%;
 }
 
 #style_sejour p
@@ -212,14 +211,14 @@ nav a:visited
     padding: 1.8% 0 1.8% 0 ;
 }
 
-#sejour
-{
-    width: 950px;
-}
-
 #sejour input[type="checkbox"]
 {
     display: none;
+}
+
+#sejour
+{
+    width: 900px;
 }
 
 #sejour label
@@ -231,6 +230,12 @@ nav a:visited
     border-left: none;
     border-radius: 40px;
     padding: 8px 10px 10px 0px;
+}
+
+#sejour label:hover
+{
+    color: #0065fc;
+    background-color: #DEEBFF;
 }
 
 input#economique[type="checkbox"] + label::before
@@ -285,12 +290,14 @@ input#animaux[type="checkbox"] + label::before
    margin-right: 10px;
 }
 
+
 #icon_info
 {
     display: inline-block;
     overflow: auto;
     vertical-align: middle;
-    margin-top: 4%;
+    margin-top: 20px;
+    margin-block-end: 20px;
 }
 
 #icon_info img
@@ -321,36 +328,38 @@ aside
 {
    float: right;
    width: 30%;
-   height: 562px;
+   height: 604px;
    display: flex;
    flex-direction: column;
    background-color: #F2F2F2;
    border-radius: 8px;
-   padding: 15px 25px;
+   padding: 15px;
 }
 
 #titrepopu
 {
     display: inline-flex;
+    flex-direction: row;
     justify-content: space-between;
     vertical-align: top;
-    margin: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
     padding: 0;
 }
 
-aside #soleil
+aside .popu
 {
-    width: 100%;
+    width: 91.7%;
     height: 135px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 2px 5px #aaaaaa;
-    margin: 15px 0;
+    margin: 15px;
 }
 
-#soleil img
+.popu img
 {
-    max-width: 36%;
+    width: 36%;
     height: 125px;
     object-fit: cover;
     border-radius: 8px 0 0 8px;
@@ -358,7 +367,7 @@ aside #soleil
     margin: 5px; 
 }
 
-#soleil #textsoleil
+.popu .textpopu
 {
     display: flex;
     flex-direction: column;
@@ -380,83 +389,7 @@ aside h6
     padding: 5% 0 30% 0;
 }
 
-#textsoleil img
-{
-    width: 10px;
-    height: 10px;
-    margin: 1px;
-    padding: 0;
-}
-
-aside #eau
-{
-    width: 100%;
-    height: 135px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px #aaaaaa;
-    margin: 15px 0;
-}
-
-#eau img
-{
-    max-width: 36%;
-    height: 125px;
-    object-fit: cover;
-    border-radius: 8px 0 0 8px;
-    float: left;
-    margin: 5px; 
-}
-
-#eau #texteau
-{
-    display: flex;
-    flex-direction: column;
-    max-width: 48%;
-    max-height: 130px;
-    margin: 0px 0 5px 0px;
-    padding: 10px;
-}
-
-#texteau img
-{
-    width: 10px;
-    height: 10px;
-    margin: 1px;
-    padding: 0;
-}
-
-aside #bleu
-{
-    width: 100%;
-    height: 135px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0px 2px 5px #aaaaaa;
-    margin: 15px 0;
-}
-
-#bleu img
-{
-    width: 36%;
-    height: 125px;
-    object-fit: cover;
-    border-radius: 8px 0 0 8px;
-    float: left;
-    margin: 5px; 
-}
-
-#bleu #textbleu
-{
-    display: flex;
-    flex-direction: column;
-    max-width: 48%;
-    max-height: 130px;
-    margin: 0px 0 5px 0px;
-    padding: 10px;
-}
-
-#textbleu img
+.textpopu img
 {
     width: 10px;
     height: 10px;
@@ -478,8 +411,8 @@ article
 #hebergements
 {
     text-align: left;
-    margin: 0 0 10px 5px;
-    padding: 18px 0 18px 0;
+    margin-left: 15px;
+    padding: 0;
 }
 
 article .blocks
@@ -495,7 +428,7 @@ article .blocks
     width: 90%;
     background-color: white;
     border-radius: 8px;
-    margin: 10px;
+    margin: 15px;
     box-shadow: 0px 2px 5px #aaaaaa;
 }
 
@@ -507,11 +440,6 @@ article .blocks
     object-fit: cover;
     padding: 2%;
     border-radius: 8px 8px 0px 0px;
-}
-
-article h4
-{
-    font-size: 14px;
 }
 
 article h4, article h6
@@ -576,9 +504,9 @@ article .star
 
 #section2 
 {
-    margin-top: 25px;
+    margin-top: 30px;
     padding: 0;
-    height: 25%;
+    max-height: 25%;
     width: 100%;
 }
 
@@ -593,7 +521,7 @@ article .star
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 3%;
-    grid-template-rows: repeat (10, 1fr);
+    grid-template-rows: repeat (4, 1fr);
     grid-auto-rows: minmax(40px, auto);
 }
 
@@ -625,7 +553,7 @@ article .star
 #vieux_port
 {
     grid-column: 1;
-    grid-row: 1 / 11;
+    grid-row: 1 / 5;
     height: 417px;
 }
 
@@ -637,7 +565,7 @@ article .star
 #pomegues
 {
     grid-column: 2;
-    grid-row: 1 / 6;
+    grid-row: 1 / 3;
     height: 221px;
 }
 
@@ -649,7 +577,7 @@ article .star
 #frioul
 {
     grid-column: 2;
-    grid-row: 7 / 11;
+    grid-row: 4 / 5;
     height: 152px;
 }
 
@@ -661,7 +589,7 @@ article .star
 #calanques
 {
     grid-column: 3;
-    grid-row: 1 / 11;
+    grid-row: 1 / 5;
     height: 417px;
 }
 
@@ -673,7 +601,7 @@ article .star
 #nd
 {
     grid-column: 4;
-    grid-row: 1 / 5;
+    grid-row: 1 / 2;
     height: 182px;
 }
 
@@ -685,7 +613,7 @@ article .star
 #longchamp
 {
     grid-column: 4;
-    grid-row: 6 / 11;
+    grid-row: 3 / 5;
     height: 195px;
 }
 
@@ -699,20 +627,35 @@ article .star
 footer
 {
     display: flex;
-    padding-top: 58px;
+    margin-top: 58px;
+    padding-bottom: 48px;
+    background-color: #F2F2F2;
 }
 
 .bas
 {
     display: flex;
     flex-direction: column;
-    width: 30%;
-    margin-left: none;
+    width: 33%;
+    margin-left: 0;
 }
 
-.bas a
+.bas h3
+{
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.bas h5
 {
     padding: 0;
-    margin: 0;
+    margin: 10px 0 0px 0;
 }
 
+@media all and(max-device-width: 480px) /*ou 980px pour Iphone 8? */
+{
+        body
+        {
+            width: auto;
+        }
+}
