@@ -289,7 +289,6 @@ input#animaux[type="checkbox"] + label::before
    margin-right: 10px;
 }
 
-
 #icon_info
 {
     display: inline-block;
@@ -490,7 +489,6 @@ article .star
     grid-column: 3;
     grid-row: 1;
 }
-
 
 #amina
 {
