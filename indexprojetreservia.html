@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <meta charset="utf-8" />
         <link rel="stylesheet" href="styleprojetreservia.css" />
@@ -9,13 +9,13 @@
     <body>
         <header>
             <div id="titre_principal">
-                <div id="logo">
+                <div id="logo_nav">
                     <img src="images/logos/Reservia.svg" alt="Logo Reservia" />
                     <nav>
                         <ul>
-                            <li><a href="#hebergements"><h5>Hébergements</h5></a></li>
-                            <li><a href="#activites"><h5>Activités</h5></a></li>
-                            <li><a href="#"><h5>S'inscrire</h5></a></li>
+                            <li><a href="#hebergements" id="navheb"><h5>Hébergements</h5></a></li>
+                            <li><a href="#activites" id="navact"><h5>Activités</h5></a></li>
+                            <li><a href="#" id="navins"><h5>S'inscrire</h5></a></li>
                         </ul>
                     </nav>  
                 </div>
@@ -26,9 +26,9 @@
                 </div>
                                     
                 <div id="choix_lieu">
-                    <img src="images/logos/map-marker-alt-solid.svg" class="align1" alt="Icone Map marker" /> 
+                    <img src="map-marker-alt-solid.svg" class="align1" alt="Icone Map marker" /> 
                     <form method="post" action="lieu.php">
-                        <div class="align1">
+                        <div> 
                             <input type="text" id="lieu" value="Marseille, France">
                             <label for="lieu">Rechercher</label>
                         </div>
@@ -49,7 +49,7 @@
 
                 
                 <div id="icon_info">
-                    <p id="image_info"><img src="images/logos/info-solid_blue.svg" alt="Icone info" /></p> 
+                    <p id="image_info"><img src="info-solid.svg" alt="Icone info" /></p> 
                     <h5>Plus de 500 logements sont disponibles dans cette ville</h5>
                 </div>
                 
@@ -74,7 +74,7 @@
                     <div class="textpopu">
                         <h4>Hôtel Le soleil du matin</h4>
                         <h6>Nuit à partir de 128€</h6>
-                        <div>
+                        <div class="starspopu">
                             <img src="star-blue.svg" alt="etoile bleue" />
                             <img src="star-blue.svg" alt="etoile bleue" />
                             <img src="star-blue.svg" alt="etoile bleue" />
@@ -90,10 +90,9 @@
                         <img src="images/hebergements/4_small/eau.jpg" alt="Au coeur de l'eau" />
                     </div>
                     <div class="textpopu">
-                        <h4>Au coeur de l'eau</h4>
-                        <h4>Chambres d'hôtes</h4>
+                        <h4>Au coeur de l'eau Chambres d'hôtes</h4>   
                         <h6>Nuit à partir de 72€</h6>
-                        <div>
+                        <div class="starspopu">
                             <img src="star-blue.svg" alt="etoile bleue" />
                             <img src="star-blue.svg" alt="etoile bleue" />
                             <img src="star-blue.svg" alt="etoile bleue" />
@@ -111,7 +110,7 @@
                     <div class="textpopu">
                         <h4>Hôtel Tout bleu et Blanc</h4>
                         <h6>Nuit à partir de 76€</h6>
-                        <div>
+                        <div class="starspopu">
                             <img src="star-blue.svg" alt="etoile bleue" />
                             <img src="star-blue.svg" alt="etoile bleue" />
                             <img src="star-blue.svg" alt="etoile bleue" />
@@ -240,9 +239,7 @@
                     <h4>Fort de Pomègues</h4>
                     </a>
                 </div>
-                
-                
-                
+                                
                 <div id="frioul" class="activ">
                     <a href="#">
                     <img src="images/activites/4_small/frioul.jpg" alt="Iles du Frioul" />
@@ -263,9 +260,7 @@
                     <h4>Notre-Dame-de-la-Garde</h4>
                     </a>
                 </div>
-                
-                
-                
+                                
                 <div id="longchamp" class="activ">
                     <a href="#">
                     <img src="images/activites/4_small/longchamp.jpg" alt="Parc Longchamp" />

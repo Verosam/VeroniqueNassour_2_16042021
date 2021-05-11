@@ -63,12 +63,14 @@ h5
 {
     font-family: Raleway-Regular, Arial, serif;
     font-size: 85%;
+    font-weight: lighter;
 }
 
 h6
 {
     font-family: Raleway-Regular, Arial, serif;
     font-size: 75%;
+    font-weight: lighter;
 }
 
 a
@@ -95,11 +97,13 @@ header
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #titre_principal h1
 {
     margin-bottom: 10px;
+    overflow-wrap: normal;
 }
 
 #titre_principal h5
@@ -107,37 +111,42 @@ header
     margin-top: 0px;
 }
 
-#logo
+#logo_nav
 {
     width: 1200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     margin-bottom: 35px;
+}
+
+#logo_nav img
+{
+    padding: 20px 20px 20px 0;
 }
 
 /* Navigation */
 
-nav ul
+#logo_nav nav ul
 {
     list-style-type: none;
     display: flex;
-}
-
-nav li
-{
-    margin-right: 15px;
+    position: absolute;
+    right: 5px;
 }
 
 nav li a
 {
     display: block;
     color: black;
-    padding: 20px 10px 0 10px;
+    padding: 20px 10px 0 25px;
     border-top: 2px solid transparent;
     text-decoration: none;
-    width: inherit;
-    height: inherit;
+}
+
+#navins h5
+{
+    font-weight: bold;
+    color: #0065FC;
 }
 
 nav a:hover
@@ -146,22 +155,11 @@ nav a:hover
     border-top: 2px solid #0065FC;
 }
 
-nav a:visited
-{
-    font-family: 'Raleway-Bold', serif;
-    color: #0065FC;
-}
-
 /* Reprise en-tête */
 
 #choix_lieu
 {
     display: inline-block;
-}
-
-#choix_lieu .align1
-{
-    vertical-align: middle;
 }
 
 #choix_lieu img
@@ -180,7 +178,7 @@ nav a:visited
     border-right: none;
     font-family: Raleway-Bold, Arial, Helvetica, sans-serif;
     font-size: 115%;
-    padding: 10px;
+    padding: 10px 10px 11px 10px;
 }
 
 #choix_lieu label
@@ -190,13 +188,14 @@ nav a:visited
     font-size: 100%;
     color: white;
     border-radius: 0 10px 10px 0;
-    padding: 12px 10px 10px 10px;
+    padding: 12px 10px 11px 10px;
 }
 
 #style_sejour
 {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 35px;
     font-family: Raleway-Bold, Arial, Helvetica, sans-serif;
@@ -218,7 +217,7 @@ nav a:visited
 
 #sejour
 {
-    width: 900px;
+    width: 110%;
 }
 
 #sejour label
@@ -297,7 +296,6 @@ input#animaux[type="checkbox"] + label::before
     overflow: auto;
     vertical-align: middle;
     margin-top: 20px;
-    margin-block-end: 20px;
 }
 
 #icon_info img
@@ -341,7 +339,6 @@ aside
     display: inline-flex;
     flex-direction: row;
     justify-content: space-between;
-    vertical-align: top;
     margin-left: 15px;
     margin-right: 15px;
     padding: 0;
@@ -350,7 +347,7 @@ aside
 aside .popu
 {
     width: 91.7%;
-    height: 135px;
+    height: 145px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0px 2px 5px #aaaaaa;
@@ -360,19 +357,19 @@ aside .popu
 .popu img
 {
     width: 36%;
-    height: 125px;
+    height: 137px;
     object-fit: cover;
     border-radius: 8px 0 0 8px;
     float: left;
-    margin: 5px; 
+    margin: 4px; 
 }
 
 .popu .textpopu
 {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: 2fr 3fr 1fr;
     max-width: 48%;
-    max-height: 130px;
+    height: 130px;
     margin: 0px 0 5px 0px;
     padding: 10px;
 }
@@ -386,11 +383,12 @@ aside h4
 aside h6
 {
     margin: 0px;
-    padding: 5% 0 30% 0;
+    padding: 0;
 }
 
-.textpopu img
+.starspopu img
 {
+    float: none;
     width: 10px;
     height: 10px;
     margin: 1px;
@@ -516,13 +514,12 @@ article .star
     margin: 0 0 10px 5px;
     padding: 18px 0 18px 0;
 }
+
 #section2 .blocksa
 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 3%;
-    grid-template-rows: repeat (4, 1fr);
-    grid-auto-rows: minmax(40px, auto);
 }
 
 .activ
@@ -652,10 +649,322 @@ footer
     margin: 10px 0 0px 0;
 }
 
-@media all and(max-device-width: 480px) /*ou 980px pour Iphone 8? */
+@media all and (max-width: 920px) 
 {
-        body
-        {
-            width: auto;
-        }
+    body
+    {
+        width: auto;
+    }
+
+    #style_sejour
+    {
+        display: block;
+    }
+
+    #section2 h2
+    {
+        margin-left: 15px;
+    }
+}
+
+@media all and (max-width: 820px) 
+{
+    #sejour
+    {
+        max-width: 570px;
+    }
+
+    #sejour label
+    {
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    #section1
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    aside
+    {
+        float: none;
+        width: 100%;
+        max-height: 604px;
+        border-radius: 0;
+        padding: 15px;
+    }
+
+    #titrepopu
+    {
+        justify-content: left;
+    }
+
+    #titrepopu h2
+    {
+        min-width: 85%;  
+    }
+
+    aside .popu
+    {
+        width: 87%;
+        max-height: 145px;
+        border-radius: 10px;
+        margin: 15px;
+    }
+
+    .popu img
+    {
+        border-radius: 10px 0 0 10px;
+    }
+    
+    article
+    {
+        width: 100%;
+        background-color: white; 
+        border-radius: 0;
+    }
+
+    article .blocks
+    {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, 220px);
+    }
+
+    .heberg
+    {
+        border-radius: 10px;
+    }
+
+    .heberg img
+    {
+        border-radius: 10px 10px 0 0;
+    }
+
+    article h3
+    {
+        margin-bottom: 20px;
+    }
+
+    #section2
+    {
+        margin-bottom: 0;
+    }
+
+    .activ
+    {
+        border-radius: 10px;
+    }
+
+    .activ img
+    {
+        border-radius: 10px 10px 0 0;
+    }
+
+    #section2 .blocksa
+    {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        column-gap: 2%;
+        row-gap: 3%;
+    }
+
+    #vieux_port
+    {
+        grid-column: 1;
+        grid-row: 1;
+        height: 180px;
+    }
+    
+    #vieux_port img
+    {
+        height: 70%;
+    }
+    
+    #pomegues
+    {
+        grid-column: 2;
+        grid-row: 1;
+        height: 180px;
+    }
+    
+    #pomegues img
+    {
+        height: 70%;
+    }
+    
+    #frioul
+    {
+        grid-column: 3;
+        grid-row: 1;
+        height: 180px;
+    }
+    
+    #frioul img
+    {
+        height: 70%;
+    }
+    
+    #calanques
+    {
+        grid-column: 1;
+        grid-row: 2;
+        height: 180px;
+    }
+    
+    #calanques img
+    {
+        height: 70%;
+    }
+    
+    #nd
+    {
+        grid-column: 2;
+        grid-row: 2;
+        height: 180px;
+    }
+    
+    #nd img
+    {
+        height: 70%;
+    }
+    
+    #longchamp
+    {
+        grid-column: 3;
+        grid-row: 2;
+        height: 180px;
+    }
+    
+    #longchamp img
+    {
+        height: 70%;
+    }
+}
+
+
+@media all and (max-width: 530px)
+{
+    body
+    {
+        width: auto;
+        margin: auto;
+    }
+
+    body h5
+    {
+        font-size: 100%;
+    }
+
+    #logo_nav nav ul
+    {
+        position: static;
+    }
+
+    #navins
+    {
+        position: absolute;
+        right: 5px;
+        text-decoration: none;
+    }
+    
+    #navheb
+    {
+        position: absolute;
+        top: 60px;
+        left: 0px;
+        right: 50%;
+        margin-bottom: 10px;
+        border-bottom: 4px #F2F2F2 solid;
+    }
+
+    #navact
+    {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        left: 50%;
+        padding-left: 20%;
+        margin-bottom: 10px;
+        border-bottom: 4px #F2F2F2 solid;
+    }
+
+    #navheb:hover
+    {
+        border-top: none;
+        border-bottom: 4px #0065FC solid;
+    }
+
+    #navact:hover
+    {
+        border-top: none;
+        border-bottom: 4px #0065FC solid;
+    }
+
+
+    #titre_principal h1
+    {
+        margin: 20px 0px;
+    }
+
+    #titre_principal h5
+    {
+        margin: 0 0 20px 0px;
+    }
+
+    #choix_lieu
+    {
+        align-items: center;
+    }
+
+    #lieu
+    {
+        max-width: 150px;
+    }
+
+    #sejour
+    {
+        max-width: 350px;
+    }
+
+    #sejour label
+    {
+        display: inline-block;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 10px;
+    }
+
+    article .blocks
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #section2 .blocksa
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .activ
+    {
+        width: 90%;
+        margin: 15px;
+    }
+
+    footer
+    {
+        flex-direction: column;
+    }
+
+    .bas
+    {
+        width: 100%;
+        margin-left: 30px;
+    }
 }
