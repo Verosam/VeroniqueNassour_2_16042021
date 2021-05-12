@@ -143,10 +143,10 @@ nav li a
     text-decoration: none;
 }
 
-#navins h5
+#navins h4
 {
-    font-weight: bold;
     color: #0065FC;
+    margin: 0;
 }
 
 nav a:hover
@@ -748,6 +748,7 @@ footer
 
     #section2
     {
+        margin-top: 0;
         margin-bottom: 0;
     }
 
@@ -857,6 +858,11 @@ footer
         font-size: 100%;
     }
 
+    #logo_nav img 
+    {
+        padding-left: 15px;
+    }
+
     #logo_nav nav ul
     {
         position: static;
@@ -873,7 +879,7 @@ footer
     {
         position: absolute;
         top: 60px;
-        left: 0px;
+        left: 20px;
         right: 50%;
         margin-bottom: 10px;
         border-bottom: 4px #F2F2F2 solid;
@@ -883,7 +889,7 @@ footer
     {
         position: absolute;
         top: 60px;
-        right: 20px;
+        right: 0px;
         left: 50%;
         padding-left: 20%;
         margin-bottom: 10px;
@@ -905,22 +911,28 @@ footer
 
     #titre_principal h1
     {
-        margin: 20px 0px;
+        margin: 20px 15px;
     }
 
-    #titre_principal h5
+    #titre_principal h1 + h5
     {
-        margin: 0 0 20px 0px;
+        margin: 20px 15px;
     }
 
     #choix_lieu
     {
         align-items: center;
+        margin: 0 15px;
     }
 
     #lieu
     {
         max-width: 150px;
+    }
+
+    #style_sejour
+    {
+        margin: 20px 15px 0px 15px;
     }
 
     #sejour
@@ -936,12 +948,22 @@ footer
         margin-bottom: 10px;
     }
 
+    #icon_info
+    {
+        margin: 0 15px 10px 15px;
+    }
+    
     article .blocks
     {
         display: flex;
         flex-direction: column;
     }
     
+    .heberg
+    {
+        width: 87%;
+    }
+
     #section2 .blocksa
     {
         display: flex;
@@ -953,6 +975,16 @@ footer
     {
         width: 90%;
         margin: 15px;
+    }
+
+    #nd img 
+    {   
+        object-position:top;
+    }
+
+    #longchamp img 
+    {   
+        object-position:center;
     }
 
     footer
