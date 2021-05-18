@@ -734,6 +734,13 @@ footer
         margin-bottom: 15px;
     }
 
+    #titrepopu img
+    {
+        width: 20px;
+        height: 24px;
+        padding-top: 25px;
+    }
+
     aside .popu
     {
         width: 85%;
