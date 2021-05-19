@@ -347,6 +347,13 @@ aside
     padding: 0;
 }
 
+#titrepopu img 
+{
+    max-width: 24px;
+    max-height: 24px;
+    padding-top: 25px;
+}
+
 aside .popu
 {
     width: 91.7%;
@@ -736,8 +743,8 @@ footer
 
     #titrepopu img
     {
-        width: 20px;
-        height: 24px;
+        width: 22px;
+        height: 22px;
         padding-top: 25px;
     }
 
@@ -758,7 +765,6 @@ footer
     {
         font-size: 90%;
         padding-top: 5px;
-        font-weight: bolder;
     }
 
     .popu img
@@ -821,7 +827,6 @@ footer
     .heberg h6
     {
         font-size: 87%;
-        font-weight: bolder;
         margin-bottom: 0px;
         padding-left: 10px;
     }
@@ -980,7 +985,6 @@ footer
     #navheb h5
     {
         margin-bottom: 0px;
-        font-weight: bolder;
         font-size: 90%;
     }
 
@@ -998,7 +1002,6 @@ footer
     #navact h5
     {
         margin-bottom: 0px;
-        font-weight: bolder;
         font-size: 90%;
     }
 
