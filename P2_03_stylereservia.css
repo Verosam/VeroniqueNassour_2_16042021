@@ -199,7 +199,7 @@ nav a:hover
     width: 100%;
     margin-top: 35px;
     font-family: Raleway-Bold, Arial, Helvetica, sans-serif;
-    font-size: 115%;
+    font-size: 110%;
 }
 
 #style_sejour p
@@ -1076,7 +1076,7 @@ footer
     #style_sejour
     {
         margin: 25px 15px 0px 15px;
-        font-size: 105%;
+        font-size: 100%;
     }
 
     #style_sejour p 
