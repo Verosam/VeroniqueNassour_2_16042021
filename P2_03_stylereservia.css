@@ -143,7 +143,7 @@ nav li a
 {
     display: block;
     color: black;
-    padding: 20px 10px 0 25px;
+    padding: 20px 25px 0 25px;
     border-top: 2px solid transparent;
     text-decoration: none;
 }
@@ -696,7 +696,7 @@ footer
     margin: 10px 0 0px 0;
 }
 
-@media screen and (max-device-width: 930px)
+@media only screen and (max-device-width: 930px)
 {
     body
     {
@@ -720,7 +720,7 @@ footer
 
     #section2 h1
     {
-        margin-left: 15px;
+        padding-left: 15px;
         margin-bottom: 0px;
     }
 
@@ -732,17 +732,12 @@ footer
 
     #footer_intra
     {
-        margin-left: 15px;
+        padding-left: 35px;
     }
 }
 
-@media screen and (max-device-width: 832px)
+@media only screen and (max-device-width: 765px)
 {
-    #sejour
-    {
-        max-width: 570px;
-    }
-
     #sejour label
     {
         display: inline-block;
@@ -773,7 +768,7 @@ footer
 
     #titrepopu
     {
-        justify-content: left;
+        text-align: left;
     }
 
     #titrepopu h1
@@ -1066,7 +1061,8 @@ footer
     #navheb
     {
         position: absolute;
-        left : 50px;
+        right: 50%;
+        left: 0px;
         top: 190px;
         font-size: 2.3em;
         font-weight: bolder;
@@ -1077,7 +1073,8 @@ footer
     #navact
     {
         position: absolute;
-        left: 450px;
+        right: 0px;
+        left: 50%;
         top: 190px;
         padding: 0 170px 20px 170px;
         font-size: 2.3em;
@@ -1110,7 +1107,7 @@ footer
 
     #choix_lieu
     {
-        margin: 55px 15px;
+        margin: 55px 0px;
     }
 
     #choix_lieu_mq
@@ -1196,7 +1193,7 @@ footer
     {
     content: url(images/icones/child-solid_mq.svg);
     background-color: #deebff;
-    padding: 40px 40px 40px 40px;
+    padding: 38px 42px 44px 42px;
     display: inline-block;
     height: 30px;
     width: 30px;
@@ -1254,7 +1251,8 @@ footer
 
     aside
     {
-        margin-top: 30px;
+        margin: 30px 0 15px 0;
+        padding: 0;
         height: 1450px;
         max-height: 1500px;
         width: 95%;
@@ -1372,13 +1370,13 @@ footer
 
     article p 
     {
-        margin: 50px 0 60px -400px;
+        padding: 50px 0 60px -400px;
         font-size: 2.5em;
     }
 
     #section2 h1
     {
-        margin: 30px 0 15px 50px;
+        padding: 48px 0 33px 50px;
     }
 
     #section2 .blocksa
@@ -1480,7 +1478,7 @@ footer
     .bas
     {
         width: 100%;
-        margin-left: 60px;
+        padding-left: 60px;
     }
 
     .bas h1
