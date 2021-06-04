@@ -980,11 +980,17 @@ footer
 {
     body 
     {
-        width: auto;
+        width: 100%;
         height: 11000px;
         margin: 0;
     }
     
+    #body_hors_footer
+    {
+        max-width: unset;
+        width: 100%;
+    }
+
     .fsb0
     {
         font-size: 1.8em;
@@ -1010,11 +1016,6 @@ footer
     {
         font-family: Raleway-Bold, Aral, serif;
         font-size: 2.6em;
-    }
-
-    .fsr5
-    {
-        font-size: 0.9em;
     }
 
     .fsr6
@@ -1076,7 +1077,7 @@ footer
         right: 0px;
         left: 50%;
         top: 190px;
-        padding: 0 170px 20px 170px;
+        padding: 0 155px 20px 155px;
         font-size: 2.3em;
         font-weight: bolder;
         border-bottom: 4px #dddddd solid;
@@ -1103,6 +1104,7 @@ footer
     {
         padding-left: 15px;
         margin-bottom: 20px;
+        font-size: 1.8em;
     }
 
     #choix_lieu
@@ -1255,7 +1257,7 @@ footer
         padding: 0;
         height: 1450px;
         max-height: 1500px;
-        width: 95%;
+        width: 100%;
     }
 
     #titrepopu
@@ -1370,7 +1372,8 @@ footer
 
     article p 
     {
-        padding: 50px 0 60px -400px;
+        padding: 50px 0 60px 0x;
+        margin-left: -400px;
         font-size: 2.5em;
     }
 
@@ -1467,6 +1470,11 @@ footer
     {   
         object-position:center;
         height: 71%;
+    }
+
+    footer
+    {
+        width: 110%;
     }
 
     #footer_intra
